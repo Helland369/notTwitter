@@ -26,6 +26,8 @@ Vær kreativ!
 
 ## Oppgave liste
 
+- [ ] Lage en create account side.
+
 - [ ] Lage en log inn side (navn, epost, usrename)
 
 - [ ] Lage en feed hovor man ser hva andre poster.
