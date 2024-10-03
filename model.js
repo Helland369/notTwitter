@@ -6,7 +6,7 @@ const main = document.getElementById("main");
 // TODO // null value is temp value, need to be changed
 const model = {
     app: {
-        page: "start",
+        page: "home",
     },
 
     input: {
