@@ -1,0 +1,28 @@
+body {
+    margin: 0px;
+}
+
+#homeHead {
+    background-color: green;
+    color: whitesmoke;
+    text-align: center;
+    padding: 26px;
+}
+
+#homeMain {
+    background: #222222;
+    color: whitesmoke;
+    text-align: center;
+    padding: 350px;
+}
+
+#homeFooter {
+    background-color: green;
+    color: whitesmoke;
+    text-align: center;
+    padding: 26px;
+}
+
+#homeFooter ul {
+    list-style-type: none;
+}
