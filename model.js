@@ -15,13 +15,14 @@ const model = {
         },
 
         usrIn: {
-            fname: null,
-            lname: null,
-            usrName: null,
-            mail: null,
+            fname: "",
+            lname: "",
+            usrName: "",
+            mail: "",
+            password: "",
         },
 
-        delete: {
+        deleteUsr: {
             areYouSure: false,
             doYouWantToDelete: false,
         },

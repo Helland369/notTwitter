@@ -3,7 +3,8 @@
 //
 function loginView() {
     main.innerHTML = `
-        <form>
+        ${headerView()}
+        <form id="loginForm">
             <h1>Login</h1><br><br>
             <label for="usrLogin">User Name:</label><br>
             <input type="text" id="usrLogin" placeholder="User name"><br>
@@ -12,5 +13,6 @@ function loginView() {
             <br><br>
             <button>Login</button>
         </form>
+        ${footerView()}
     `;
 }

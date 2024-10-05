@@ -26,6 +26,8 @@ Vær kreativ!
 
 ## Oppgave liste
 
+- [ ] Lage en main/home side
+
 - [ ] Lage en create account side.
 
 - [ ] Lage en log inn side (navn, epost, usrename)
@@ -48,8 +50,14 @@ Vær kreativ!
 
 ## Nice to have
 
-- [ ] Liker/ikker liker knapp
+- [ ] Liker/ikker liker knapp?
+
+- [ ] Dele funksjon // dele et innlegg som andre har skrevet?
 
 - [ ] Makreds plass ?
+
+- [ ] Chat?
+
+- [ ] Chat bot?
 
 - [ ] Noe annet ?
