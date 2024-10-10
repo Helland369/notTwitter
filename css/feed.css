@@ -4,7 +4,12 @@
     text-align: center;
     padding: 26px;
 }
-   margin: 0px;
+
+#feedNav ul {
+    list-style-type: none;
+    background-color: blue;
+    padding: 0px;
+    margin: 0px;
     overflow: hidden;
 }
 
@@ -12,6 +17,8 @@
     float: left;
     padding: 16px;
 }
+
+
 
 #feedMain {
     background: #222222;
