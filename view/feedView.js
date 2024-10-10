@@ -3,10 +3,10 @@
 //
 function feedView() {
     main.innerHTML = `
-        <header>
+        <header id="feedHead">
             <h1>Not Twitter</h1>
         </header>
-        <nav>
+        <nav id="feedNav">
             <ul>
                 <li>Feed</li>
                 <li>Profile</li>
@@ -14,16 +14,14 @@ function feedView() {
                 <li>Settings</li>
             </ul>
         </nav>
-        <div>
+        <main id="feedMain">
             <div>
-                <p>A post</p>
+                <p>Hello</p>
             </div>
             <div>
-                <p>one more post</p>
+                <p>Hello</p>
             </div>
-            <div>
-                <p>This goes in the midle</p>
-            </div>
-        </div>
+        </main>
+        
     `;
 }

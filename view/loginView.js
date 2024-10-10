@@ -4,14 +4,18 @@
 function loginView() {
     main.innerHTML = `
         ${headerView()}
-        <form id="loginForm">
+        <form id="loginForm" name="loginForm" onsubmit="loginController(event)">
+
             <h1>Login</h1><br><br>
+
             <label for="usrLogin">User Name:</label><br>
-            <input type="text" id="usrLogin" placeholder="User name"><br>
+            <input type="text" id="usrLogin" placeholder="User name" autocomplete="off"><br>
+
             <label for="usrPassword">Password:</label><br>
-            <input type="text" id="usrPassword" placeholder="password"><br>
+            <input type="password" id="usrPassword" placeholder="password" autocomplete="off"><br>
+
             <br><br>
-            <button>Login</button>
+            <input type="submit" value="Login">
         </form>
         ${footerView()}
     `;
