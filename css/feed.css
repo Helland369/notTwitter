@@ -1,0 +1,21 @@
+#feedHead {
+    background-color: green;
+    color: whitesmoke;
+    text-align: center;
+    padding: 26px;
+}
+   margin: 0px;
+    overflow: hidden;
+}
+
+#feedNav li {
+    float: left;
+    padding: 16px;
+}
+
+#feedMain {
+    background: #222222;
+    color: whitesmoke;
+    text-align: center;
+    padding: 350px;
+}
