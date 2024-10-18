@@ -61,5 +61,11 @@ function signupController(event) {
     model.app.page = "login";
     updateView();
 
+    model.input.usrIn.fname = "";
+    model.input.usrIn.lname = "";
+    model.input.usrIn.mail = "";
+    model.input.usrIn.password = "";
+    model.input.usrIn.usrName = "";
+
     return true; //loginController();
 }

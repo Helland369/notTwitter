@@ -15,12 +15,7 @@ function feedView() {
             </ul>
         </nav>
         <main id="feedMain">
-            <div>
-                <p>Hello</p>
-            </div>
-            <div>
-                <p>Hello</p>
-            </div>
+                ${feedController()}
         </main>
         
     `;
