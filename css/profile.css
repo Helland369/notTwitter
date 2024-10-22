@@ -1,11 +1,11 @@
-#feedHead {
+#profileHead {
     background-color: green;
     color: whitesmoke;
     text-align: center;
     padding: 26px;
 }
 
-#feedNav ul {
+#profileNav ul {
     list-style-type: none;
     background-color: blue;
     padding: 0px;
@@ -13,16 +13,14 @@
     overflow: hidden;
 }
 
-#feedNav li {
+#profileNav li {
     float: left;
     padding: 16px;
 }
 
-
-
-#feedMain {
+#profileMain {
     background: #222222;
     color: whitesmoke;
     text-align: center;
-    padding: 100px;
+    padding: 350px;
 }
