@@ -20,6 +20,7 @@ const model = {
             usrName: "",
             mail: "",
             password: "",
+            post: [],
         },
 
         deleteUsr: {

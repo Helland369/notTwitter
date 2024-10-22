@@ -1,7 +1,6 @@
 //
 //
 //
-// TODO // make view functions // use switch case ? page !== null ???
 updateView();
 function updateView() {
     const page = model.app.page;
@@ -9,5 +8,5 @@ function updateView() {
     else if (page === "signup") signupView();
     else if (page === "login") loginView();
     else if (page === "feed") feedView();
-    // etc
+    else if (page === "profile") profileView();
 }

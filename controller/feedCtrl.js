@@ -1,7 +1,6 @@
 //
 //
 //
-//feedController();
 function feedController() {
     let feed = "";
 
