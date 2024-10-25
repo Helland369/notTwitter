@@ -52,11 +52,11 @@ function signupController(event) {
         console.log(model.input.usrIn.password);
     }
 
-    model.usr[0].fname = model.input.usrIn.fname;
-    model.usr[0].lname = model.input.usrIn.lname;
-    model.usr[0].usrName = model.input.usrIn.usrName;
-    model.usr[0].mail = model.input.usrIn.mail;
-    model.usr[0].password = model.input.usrIn.password;
+    model.data.usr[0].fname = model.input.usrIn.fname;
+    model.data.usr[0].lname = model.input.usrIn.lname;
+    model.data.usr[0].usrName = model.input.usrIn.usrName;
+    model.data.usr[0].mail = model.input.usrIn.mail;
+    model.data.usr[0].password = model.input.usrIn.password;
 
     model.app.page = "login";
     updateView();
