@@ -4,7 +4,7 @@
 function loginView() {
     main.innerHTML = `
         ${headerView()}
-        <form id="loginForm" name="loginForm" onsubmit="loginController(event)">
+        <form id="loginForm" name="loginForm" onsubmit="loginCtrl()">
 
             <h1>Login</h1><br><br>
 
