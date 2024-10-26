@@ -5,18 +5,22 @@ function feedController() {
     let feed = "";
 
     for (let i = 0; i < model.data.usr.length; i++) {
-        if (
-            model.data.usr[i].post != null &&
-            model.data.usr[i].fname &&
-            model.data.usr[i].lname
-        ) {
+        const usr = model.data.usr[i];
+
+        if (usr.post.length > 0 && usr.fname && usr.lname) {
             feed += `
         <div>
-            <a>${model.data.usr[i].fname} ${model.data.usr[i].lname}</a>
-            <p>${model.data.usr[i].post}</p>
+            <a>${usr.fname} ${usr.lname}</a>
         <div>
-        <hr><br>
         `;
+            for (let x = 0; x < usr.post.length; x++) {
+                feed += `
+                <div>
+                   <p>${usr.post[x]}</p>
+                </div>
+                <hr><br>
+                `;
+            }
         }
     }
     return feed;
