@@ -7,51 +7,40 @@ function profile() {
 }
 
 function profileUsrPost() {
-    let html;
+    let html = "";
+    const id = model.app.usrId;
 
-    for (let i = 0; i < model.data.usr.length; i++) {
-        if (
-            model.data.usr[0].fname != null &&
-            model.data.usr[0].lname != null &&
-            model.data.usr[0].post[i] != null
-        ) {
-            html += `
+    const usr = model.data.usr.find((usr) => usr.id === id); // find user id so that we can print posts made by the user
+    if (usr && usr.fname && usr.lname && usr.post.length > 0) {
+        for (let i = 0; i < model.data.usr.length; i++) {
+            if (usr.post[i]) {
+                html += `
             <div>
-                <p>${model.data.usr[0].fname} ${model.data.usr[0].lname}</p>
-                <p>${model.data.usr[0].post[i]}</p>
+                <p>${usr.fname} ${usr.lname}</p>
+                <p>${usr.post[i]}</p>
                 <hr><br>
             </div>
             `;
+            }
         }
     }
+
     return html;
 }
 
-// function profileUsrPost() {
-//     const id = model.app.usrId;
-//     const html = "";
+function profileUsrMakePost(event) {
+    event.preventDefault();
 
-//     for (let i = 0; i < model.data.usr.length; i++) {
-//         if (model.data.usr[id].post[i] !== null) {
-//             html += `
-//             <div>
-//                 <p>${model.data.usr[id].fname} ${model.data.usr[id].lname}</p>
-//                 <p>${model.data.usr[id].post}</p>
-//             </div>
-//             `;
-//         }
-//     }
-//     return html;
-// }
+    const usrPost = document.getElementById("usrPost").value;
+    const id = model.app.usrId;
 
-function profileUsrMakePost() {
-    let usrPost = document.getElementById("usrPost").value;
+    const usr = model.data.usr.find((usr) => usr.id === id);
+
     model.input.usrIn.post.push(usrPost);
 
-    model.data.usr[0].post = model.input.usrIn.post;
+    usr.post = model.input.usrIn.post;
 
     console.log(model.input.usrIn.post);
 
-    //profile();
-    profileView();
+    profile();
 }

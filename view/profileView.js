@@ -15,7 +15,7 @@ function profileView() {
         </nav>
         <div id="profileMain">
             <div>
-                <form onsubmit="profileUsrMakePost()">
+                <form onsubmit="profileUsrMakePost(event)">
                     <label for="usrPost">Make a post</label>
                     <br>
                     <textarea id="usrPost" name="usrPost" placeholder="What are you thinking?" rows="5px" cols="60px"></textarea><br>
