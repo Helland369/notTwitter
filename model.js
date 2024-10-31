@@ -6,7 +6,7 @@ const main = document.getElementById("main");
 const model = {
     app: {
         page: "home",
-        usrId: "", // TODO: store loged inn user id here;
+        usrId: "",
     },
 
     input: {

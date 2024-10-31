@@ -7,9 +7,9 @@ function profileView() {
     <header id="profileHead">Profile page</header>
         <nav id="profileNav">
             <ul>
-                <li>Home</li>
-                <li>Feed</li>
-                <li>Settings</li>
+                <li onclick="goToHome()">Home</li>
+                <li onclick="goToFeed()">Feed</li>
+                <li onclick="goToSettings()">Settings</li>
                 <li>Pofile</li>
             </ul>
         </nav>
