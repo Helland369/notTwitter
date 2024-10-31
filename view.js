@@ -9,4 +9,5 @@ function updateView() {
     else if (page === "login") loginView();
     else if (page === "feed") feedView();
     else if (page === "profile") profileView();
+    else if (page === "settings") settingsView();
 }

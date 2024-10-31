@@ -8,10 +8,10 @@ function feedView() {
         </header>
         <nav id="feedNav">
             <ul>
-                <li>Feed</li>
-                <li>Profile</li>
+                <li onclick="goToHome()">Home</li>
+                <li onclick="goToProfile()">Profile</li>
                 <li>Friends</li>
-                <li>Settings</li>
+                <li onclick="goToSettings()">Settings</li>
             </ul>
         </nav>
         <main id="feedMain">
