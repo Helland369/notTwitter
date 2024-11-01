@@ -10,4 +10,7 @@ function updateView() {
     else if (page === "feed") feedView();
     else if (page === "profile") profileView();
     else if (page === "settings") settingsView();
+    else if (page === "delete") deleteView();
+    else if (page === "deleteTwo") deleteViewTwo();
+    else if (page === "deleteThree") deleteViewThree();
 }
