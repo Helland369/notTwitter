@@ -44,3 +44,18 @@ function profileUsrMakePost(event) {
 
     profile();
 }
+
+function profileDispUserInfo() {
+    const id = model.app.usrId;
+
+    const usr = model.data.usr.find((usr) => usr.id === id);
+
+    const html = `
+    <div>
+        <p>${usr.fname} ${usr.lname}</p>
+        <p>${usr.bio}</p>
+        <hr><br>
+    </div>
+    `;
+    return html;
+}
