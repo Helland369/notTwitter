@@ -15,6 +15,7 @@ function profileView() {
         </nav>
         <div id="profileMain">
             <div>
+                <div>${profileDispUserInfo()}</div>
                 <form onsubmit="profileUsrMakePost(event)">
                     <label for="usrPost">Make a post</label>
                     <br>
