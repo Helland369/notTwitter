@@ -1,27 +1,35 @@
 //
 //
 //
-function feedController() {
-    let feed = "";
+function feedClickUser(storeData) {
+    //if (!model.data.usr[storeData]) {
+    //    console.log("storeData not found ${storeData}");
+    //    return;
+    //}
+    model.app.selectedUsr = model.data.usr[storeData].id;
 
-    for (let i = 0; i < model.data.usr.length; i++) {
-        const usr = model.data.usr[i];
+    model.data.tempStorage = { ...model.data.usr[storeData] };
 
-        if (usr.post.length > 0 && usr.fname && usr.lname) {
-            feed += `
+    //if (model.data.tempStorage.id) {
+    //model.app.selectedUsr = model.data.tempStorage.id;
+    //} else {
+    //    console.log("No user id");
+    //}
+
+    console.log(model.data.tempStorage);
+    feedProfile();
+}
+
+function loopPostsOfSelectedusr() {
+    let html = "";
+
+    for (let i = 0; i < model.data.tempStorage.post.length; i++) {
+        html += `
         <div>
-            <a>${usr.fname} ${usr.lname}</a>
-        <div>
+        <p>${model.data.tempStorage.fname} ${model.data.tempStorage.lname}</p>
+        <p>${model.data.tempStorage.post[i]}</p>
+        </div>
         `;
-            for (let x = 0; x < usr.post.length; x++) {
-                feed += `
-                <div>
-                   <p>${usr.post[x]}</p>
-                </div>
-                <hr><br>
-                `;
-            }
-        }
     }
-    return feed;
+    return html;
 }

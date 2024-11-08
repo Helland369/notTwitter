@@ -7,6 +7,7 @@ const model = {
     app: {
         page: "home",
         usrId: "",
+        selectedUsr: "",
     },
 
     input: {
@@ -158,5 +159,17 @@ const model = {
                 friends: [],
             },
         ],
+        tempStorage: {
+            id: 0,
+            bio: "",
+            fname: "",
+            lname: "",
+            usrName: "",
+            mail: "",
+            image: "",
+            password: "",
+            post: [],
+            friends: [],
+        },
     },
 };
